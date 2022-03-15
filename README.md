@@ -1,2 +1,3 @@
 assemblyKmerViz (tentative package name) 
-author: Chiara Paleni
+author: Chiara Paleni 
+Università degli Studi di Milano
