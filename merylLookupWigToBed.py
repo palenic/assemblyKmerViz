@@ -1,5 +1,6 @@
 import argparse
 import merylLookupSuite as mer
+import sys
 
 parser = argparse.ArgumentParser(description="""Summarizes variableStep .wig files produced by 
     meryl-lookup -wig-count showing the multiplicity of the kmer
@@ -17,7 +18,7 @@ parser = argparse.ArgumentParser(description="""Summarizes variableStep .wig fil
     References: 
     https://github.com/marbl/meryl""",
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument("input_wig", help="path to input wig file")
+parser.add_argument("input_wig", help="path to input wig file (- to read from stdin)",nargs="?",type=argparse.FileType('r'), default=sys.stdin)
 parser.add_argument("output_bed", help="path to output bed file")
 parser.add_argument("-b","--binned", help="turn on binned mode",action="store_true")
 parser.add_argument("-w", help="bin width for binned mode",nargs="?",type=int,default=100)

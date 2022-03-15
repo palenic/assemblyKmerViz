@@ -4,7 +4,7 @@ import merylLookupSuite as mer
 
 parser = argparse.ArgumentParser(description="""Evaluate a genome assembly by producing a 
     .bed file containing the multiplicity of k-mers at each position.
-    Calls meryl-lookup wig-count 
+    Calls meryl-looku
 Summarizes variableStep .wig files produced by 
     meryl-lookup -wig-count showing the multiplicity of the kmer
     starting at each position in the genome assembly. Produces a tab-separated 
@@ -19,7 +19,7 @@ Summarizes variableStep .wig files produced by
     """,
     epilog="""Author: Chiara Paleni""",
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument("input_wig", help="path to input wig file",nargs='?', type=argparse.FileType('r'))
+parser.add_argument("input_wig", help="path to input wig file")
 parser.add_argument("output_bed", help="path to output bed file")
 parser.add_argument("-b","--binned", help="turn on binned mode",action="store_true")
 parser.add_argument("-w", help="bin width for binned mode",nargs="?",type=int,default=100)

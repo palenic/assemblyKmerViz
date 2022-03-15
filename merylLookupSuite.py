@@ -2,7 +2,7 @@
 starting from meryl-lookup results.
 """
 
-import pandas as pd
+#import pandas as pd
 import random
 
 def merylLookupWigToBed(input_wig,output_bed,verbose=True):
@@ -38,7 +38,7 @@ def merylLookupWigToBed(input_wig,output_bed,verbose=True):
     
     o=open(output_bed,"w")
     
-    with open(input_wig) as f:
+    with input_wig as f:
     
         # read first line to check it has the correct headers
         # correct header looks like this:
@@ -246,7 +246,7 @@ def merylLookupWigToBedBinned(input_wig,output_bed,bin_width=100,verbose=True):
     
     #def writeBedLine
     
-    with open(input_wig) as f:
+    with input_wig as f:
     
         # read first line to check it has the correct headers
         # correct header looks like this:
