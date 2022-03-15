@@ -2,7 +2,7 @@
 starting from meryl-lookup results.
 """
 
-#import pandas as pd
+import pandas as pd
 import random
 
 def merylLookupWigToBed(input_wig,output_bed,verbose=True):
