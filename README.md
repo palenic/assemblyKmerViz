@@ -1,2 +1,2 @@
-assemblyKmerViz (tentative name) 
+assemblyKmerViz (tentative package name) 
 author: Chiara Paleni
